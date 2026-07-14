@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Get a Quote | VariScapes</title>
+<title>Contact | VariScapes</title>
 <meta name="description" content="VariScapes — full-service landscaping in DFW. Hardscapes, 3D design, lighting, drainage, lawn maintenance and more.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body><header class="scrolled">
+<body><header>
   <div class="wrap nav">
-    <a href="index.html" class="logo">Vari<span>Scapes</span></a>
+    <a href="index.html" class="brand"><img src="images/logo.jpg" alt="VariScapes"></a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
@@ -23,47 +23,54 @@
   </div>
 </header>
 <section class="page-hero">
-  <div class="ph-bg" style="background-image:url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=2000&auto=format&fit=crop')"></div>
+  <img src="images/cta.jpg" alt="Contact VariScapes">
   <div class="wrap">
-    <span class="eyebrow">Contact Us</span>
-    <h1>Let us talk about your yard</h1>
-    <p>Free quotes, honest advice, no pressure. We usually respond within one business day.</p>
+    <span class="eyebrow">Contact</span>
+    <h1>Let&rsquo;s talk about <em>your yard.</em></h1>
+    <p>Free consultations, honest pricing, and a fast response — usually within one business day.</p>
   </div>
 </section>
 <section>
   <div class="wrap contact-grid">
     <div class="reveal">
-      <div class="c-item"><div class="dot">T</div><div><h3>Call Us Now</h3><a href="tel:8173133765">817-313-3765</a></div></div>
-      <div class="c-item"><div class="dot">@</div><div><h3>Email Us</h3><a href="mailto:contact@variscapes.com">contact@variscapes.com</a></div></div>
-      <div class="c-item"><div class="dot">TX</div><div><h3>Location</h3><p>DFW, Texas — serving the entire metroplex</p></div></div>
-      <div class="c-item"><div class="dot">★</div><div><h3>Why VariScapes</h3><p>1,650+ jobs completed, 965+ happy customers, and maintenance plans for every budget.</p></div></div>
+      <span class="eyebrow">Get In Touch</span>
+      <h2 style="font-size:clamp(30px,3.4vw,44px);margin-bottom:26px">We&rsquo;re ready when <em style="font-style:italic;color:var(--leaf);font-weight:400">you are.</em></h2>
+      <div class="c-item"><div class="dot">Ph</div><div><h3>Phone</h3><a href="tel:8173133765">817-313-3765</a></div></div>
+      <div class="c-item"><div class="dot">Em</div><div><h3>Email</h3><a href="mailto:contact@variscapes.com">contact@variscapes.com</a></div></div>
+      <div class="c-item"><div class="dot">Ar</div><div><h3>Service Area</h3><p>Dallas–Fort Worth Metroplex, TX</p></div></div>
+      <div class="c-item"><div class="dot">Hr</div><div><h3>Hours</h3><p>Mon–Sat, 8am–6pm</p></div></div>
     </div>
-    <form class="reveal" id="quote-form">
+    <form class="reveal d1">
       <div class="f-row">
         <div><label for="name">Name</label><input id="name" type="text" placeholder="Your name" required></div>
-        <div><label for="phone">Phone</label><input id="phone" type="tel" placeholder="(817) 555-0100"></div>
+        <div><label for="phone">Phone</label><input id="phone" type="tel" placeholder="(817) 555-0123"></div>
       </div>
       <label for="email">Email</label>
       <input id="email" type="email" placeholder="you@email.com" required>
       <label for="service">Service Needed</label>
       <select id="service">
-        <option>Hardscape</option><option>3D Design &amp; Install</option><option>Landscape Lighting</option>
-        <option>Drainage</option><option>Lawn Maintenance</option><option>Water Features</option>
-        <option>Fencing</option><option>Synthetic Turf</option><option>Something else</option>
+        <option>Hardscape</option>
+        <option>3D Design &amp; Install</option>
+        <option>Landscape Lighting</option>
+        <option>Drainage</option>
+        <option>Lawn Maintenance</option>
+        <option>Water Features</option>
+        <option>Fencing</option>
+        <option>Synthetic Turf</option>
+        <option>Something else</option>
       </select>
-      <label for="msg">Tell us about your project</label>
-      <textarea id="msg" rows="4" placeholder="What are you dreaming up?"></textarea>
-      <button type="submit" class="btn btn-dark" style="border:none;cursor:pointer;width:100%">Request My Free Quote</button>
+      <label for="message">Tell us about your project</label>
+      <textarea id="message" rows="5" placeholder="What are you dreaming up?"></textarea>
+      <button type="submit" class="btn btn-gold" style="width:100%;border:none;cursor:pointer;font-size:16px">Request My Free Quote</button>
     </form>
-    <script>document.getElementById('quote-form').addEventListener('submit',function(e){e.preventDefault();this.innerHTML='<h3 style="text-align:center;padding:40px 0">Thank you! We will be in touch within one business day.</h3>';});</script>
   </div>
 </section>
 <footer>
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a href="index.html" class="logo">Vari<span>Scapes</span></a>
-        <p style="margin-top:16px;font-size:15px;max-width:34ch">Full-service landscaping for residential and commercial properties across DFW — built the right way, the first time.</p>
+        <a href="index.html"><img src="images/logo.jpg" alt="VariScapes"></a>
+        <p style="margin-top:20px;font-size:15px;max-width:34ch">Full-service landscaping for residential and commercial properties across DFW — built the right way, the first time.</p>
       </div>
       <div>
         <h4>Pages</h4>
