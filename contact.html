@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get a Quote | VariScapes</title>
+<meta name="description" content="VariScapes — full-service landscaping in DFW. Hardscapes, 3D design, lighting, drainage, lawn maintenance and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body><header class="scrolled">
+  <div class="wrap nav">
+    <a href="index.html" class="logo">Vari<span>Scapes</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="past-work.html">Past Work</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html" class="btn btn-gold">Get a Quote</a></li>
+    </ul>
+    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<section class="page-hero">
+  <div class="ph-bg" style="background-image:url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=2000&auto=format&fit=crop')"></div>
+  <div class="wrap">
+    <span class="eyebrow">Contact Us</span>
+    <h1>Let us talk about your yard</h1>
+    <p>Free quotes, honest advice, no pressure. We usually respond within one business day.</p>
+  </div>
+</section>
+<section>
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <div class="c-item"><div class="dot">T</div><div><h3>Call Us Now</h3><a href="tel:8173133765">817-313-3765</a></div></div>
+      <div class="c-item"><div class="dot">@</div><div><h3>Email Us</h3><a href="mailto:contact@variscapes.com">contact@variscapes.com</a></div></div>
+      <div class="c-item"><div class="dot">TX</div><div><h3>Location</h3><p>DFW, Texas — serving the entire metroplex</p></div></div>
+      <div class="c-item"><div class="dot">★</div><div><h3>Why VariScapes</h3><p>1,650+ jobs completed, 965+ happy customers, and maintenance plans for every budget.</p></div></div>
+    </div>
+    <form class="reveal" id="quote-form">
+      <div class="f-row">
+        <div><label for="name">Name</label><input id="name" type="text" placeholder="Your name" required></div>
+        <div><label for="phone">Phone</label><input id="phone" type="tel" placeholder="(817) 555-0100"></div>
+      </div>
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="you@email.com" required>
+      <label for="service">Service Needed</label>
+      <select id="service">
+        <option>Hardscape</option><option>3D Design &amp; Install</option><option>Landscape Lighting</option>
+        <option>Drainage</option><option>Lawn Maintenance</option><option>Water Features</option>
+        <option>Fencing</option><option>Synthetic Turf</option><option>Something else</option>
+      </select>
+      <label for="msg">Tell us about your project</label>
+      <textarea id="msg" rows="4" placeholder="What are you dreaming up?"></textarea>
+      <button type="submit" class="btn btn-dark" style="border:none;cursor:pointer;width:100%">Request My Free Quote</button>
+    </form>
+    <script>document.getElementById('quote-form').addEventListener('submit',function(e){e.preventDefault();this.innerHTML='<h3 style="text-align:center;padding:40px 0">Thank you! We will be in touch within one business day.</h3>';});</script>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="index.html" class="logo">Vari<span>Scapes</span></a>
+        <p style="margin-top:16px;font-size:15px;max-width:34ch">Full-service landscaping for residential and commercial properties across DFW — built the right way, the first time.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="past-work.html">Past Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Hardscape</a></li>
+          <li><a href="services.html">3D Design &amp; Install</a></li>
+          <li><a href="services.html">Landscape Lighting</a></li>
+          <li><a href="services.html">Lawn Maintenance</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:8173133765">817-313-3765</a></li>
+          <li><a href="mailto:contact@variscapes.com">contact@variscapes.com</a></li>
+          <li>DFW, Texas</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>&copy; 2026 VariScapes. All rights reserved.</span>
+      <span>The #1 Landscaping Team in DFW</span>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
